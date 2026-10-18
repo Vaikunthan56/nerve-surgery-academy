@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nerve Grafting, Conduits and Allografts</title>
+<style>
+  :root { --teal:#0f766e; --ink:#0f172a; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:'Segoe UI',system-ui,sans-serif; background:#f1f5f9; color:var(--ink); height:100vh; display:flex; flex-direction:column; }
+  .stage { flex:1; overflow-y:auto; display:flex; align-items:flex-start; justify-content:center; padding:24px; }
+  .slide { display:none; max-width:680px; width:100%; background:#fff; border-radius:16px; padding:38px 44px; box-shadow:0 10px 30px rgb(15 23 42/.08); margin:auto 0; }
+  .slide.active { display:block; animation:fade .25s ease; }
+  @keyframes fade { from { opacity:0; transform:translateY(6px);} }
+  .kicker { color:var(--teal); font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; margin-bottom:10px; }
+  h1 { font-family:Georgia,serif; font-size:27px; line-height:1.25; margin-bottom:14px; }
+  h2 { font-family:Georgia,serif; font-size:19px; margin:16px 0 6px; color:#134e4a; }
+  p, li { font-size:15px; line-height:1.65; color:#334155; }
+  p { margin-bottom:10px; } ul, ol { padding-left:20px; margin-bottom:10px; }
+  table { width:100%; border-collapse:collapse; font-size:13.5px; margin:12px 0; }
+  th, td { border:1px solid #e2e8f0; padding:7px 9px; text-align:left; vertical-align:top; }
+  th { background:#f0fdfa; color:#134e4a; }
+  .fact { background:#f0fdfa; border-left:4px solid var(--teal); border-radius:0 8px 8px 0; padding:12px 16px; font-size:14px; color:#134e4a; margin-top:14px; }
+  .ref { font-size:13px; line-height:1.55; color:#334155; margin-bottom:10px; padding-left:24px; text-indent:-24px; }
+  .ref a { color:var(--teal); word-break:break-all; }
+  .bar { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; background:#fff; border-top:1px solid #e2e8f0; }
+  .dots { display:flex; gap:6px; } .dot { width:8px; height:8px; border-radius:50%; background:#cbd5e1; } .dot.on { background:var(--teal); }
+  button.nav { border:0; border-radius:8px; padding:10px 18px; font-size:14px; font-weight:600; cursor:pointer; }
+  .next { background:var(--teal); color:#fff; } .prev { background:#e2e8f0; color:#334155; }
+  button.nav:disabled { opacity:.4; cursor:default; }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <section class="slide active">
+    <div class="kicker">Nerve Repair · Advanced · ~40 min</div>
+    <h1>Nerve Grafting, Conduits and Allografts</h1>
+    <p><strong>Learning objectives.</strong> By the end of this module you should be able to:</p>
+    <ul>
+      <li>State when a nerve gap requires a graft rather than a direct repair</li>
+      <li>Compare autograft, synthetic conduits, and processed nerve allograft</li>
+      <li>Apply a gap-length and nerve-type algorithm to choose between them</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Autograft</div>
+    <h1>The gold standard — and its price</h1>
+    <ul>
+      <li>Autologous nerve graft (classically <strong>sural nerve</strong>) provides living Schwann cells, basal lamina tubes, and neurotrophic support. It remains the benchmark against which everything else is judged <sup>[3,4]</sup>.</li>
+      <li>Costs: a <strong>donor-site sensory deficit</strong>, possible painful neuroma, an extra scar, and limited graft material — a real constraint in long or multiple gaps.</li>
+      <li>Grafts are revascularised from the wound bed; very thick grafts risk central necrosis, so multiple cable grafts are preferred for large-calibre nerves.</li>
+    </ul>
+    <div class="fact">A tension-free graft outperforms a tense direct repair — the gap itself is not the enemy; tension is.</div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Synthetic conduits</div>
+    <h1>Tubes for short gaps</h1>
+    <ul>
+      <li>Commercial conduits (polyglycolic acid, collagen, polycaprolactone) provide an empty, protected channel across a gap — no donor morbidity, off the shelf.</li>
+      <li>The landmark randomised study by Weber et al. found PGA conduits at least equivalent to direct repair for digital nerve gaps, and <strong>superior for gaps &gt;4 mm</strong> in that series <sup>[1]</sup>.</li>
+      <li>Accepted envelope: <strong>pure sensory nerves, small diameter, gaps up to ~3 cm</strong>. Beyond that, empty tubes fail — there is no living scaffold to sustain regenerating axons.</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Processed nerve allograft</div>
+    <h1>Decellularised human nerve</h1>
+    <ul>
+      <li>Processed allograft is human nerve rendered <strong>acellular and non-immunogenic</strong> while preserving the endoneurial scaffold and laminin architecture — no donor-site morbidity and no harvest-time limit <sup>[2,3]</sup>.</li>
+      <li>Early clinical series of allograft transplantation (with immunosuppression, in the pre-processing era) demonstrated that allograft tissue can support meaningful regeneration <sup>[3]</sup>; modern processed allografts achieve this without immunosuppression <sup>[2]</sup>.</li>
+      <li>Comparative work shows acellular allograft supports regeneration approaching isograft/autograft performance in suitable models and clinical series — best established for <strong>sensory and mixed nerves with gaps up to ~5 cm</strong> <sup>[2]</sup>.</li>
+      <li>Limitations: cost, variable evidence base for motor nerves and long gaps, and calibre matching.</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Choosing between them</div>
+    <h1>A working algorithm</h1>
+    <table>
+      <tr><th>Situation</th><th>First choice</th></tr>
+      <tr><td>Tension-free coaptation possible</td><td>Direct repair</td></tr>
+      <tr><td>Sensory nerve, small calibre, gap &lt; 3 cm</td><td>Conduit <em>or</em> allograft</td></tr>
+      <tr><td>Sensory/mixed nerve, gap ~3–5 cm</td><td>Processed allograft or autograft</td></tr>
+      <tr><td>Motor / large mixed nerve, or long gap</td><td>Autograft (gold standard)</td></tr>
+      <tr><td>Proximal injury with long reinnervation distance</td><td>Consider nerve transfer instead</td></tr>
+    </table>
+    <p>Local practice, cost and the evidence base evolve quickly — review the current literature before applying this dogmatically <sup>[2,4]</sup>.</p>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Key points</div>
+    <h1>Take-home messages</h1>
+    <ol>
+      <li>Autograft remains the reference standard; every alternative trades donor morbidity against regenerative quality.</li>
+      <li>Conduits: short (&lt;3 cm), small, sensory gaps only.</li>
+      <li>Processed allograft fills the middle ground — scaffold without donor morbidity.</li>
+      <li>When the target is too far for a graft to reach in time, think <strong>nerve transfer</strong>, not a longer graft.</li>
+    </ol>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">References</div>
+    <h1>Sources &amp; further reading</h1>
+    <p class="ref">1. Weber RA, Breidenbach WC, Brown RE, Jabaley ME, Mass DP. A randomized prospective study of polyglycolic acid conduits for digital nerve reconstruction in humans. <em>Plast Reconstr Surg</em>. 2000;106(5):1036–1045. doi: <a href="https://doi.org/10.1097/00006534-200010000-00013">10.1097/00006534-200010000-00013</a></p>
+    <p class="ref">2. Moore AM, Macewan M, Santosa KB, et al. Acellular nerve allografts in peripheral nerve regeneration: a comparative study. <em>Muscle Nerve</em>. 2011;44(2):221–234. doi: <a href="https://doi.org/10.1002/mus.22033">10.1002/mus.22033</a></p>
+    <p class="ref">3. Mackinnon SE, Doolabh VB, Novak CB, Trulock EP. Clinical outcome following nerve allograft transplantation. <em>Plast Reconstr Surg</em>. 2001;107(6):1419–1429. doi: <a href="https://doi.org/10.1097/00006534-200105000-00016">10.1097/00006534-200105000-00016</a></p>
+    <p class="ref">4. Weber RV, Mackinnon SE. Bridging the neural gap. <em>Clin Plast Surg</em>. 2005;32(4):605–616. doi: <a href="https://doi.org/10.1016/j.cps.2005.05.003">10.1016/j.cps.2005.05.003</a></p>
+    <p style="font-size:12px;color:#94a3b8;margin-top:14px">Educational content for junior surgical trainees. All DOIs verified against CrossRef at the time of publication (Oct 2026).</p>
+  </section>
+
+</div>
+<div class="bar">
+  <button class="nav prev" id="prev" disabled>← Back</button>
+  <div class="dots" id="dots"></div>
+  <button class="nav next" id="next">Next →</button>
+</div>
+<script>
+  const slides=document.querySelectorAll('.slide'),dots=document.getElementById('dots'),
+        prev=document.getElementById('prev'),next=document.getElementById('next');let i=0;
+  slides.forEach((_,k)=>{const d=document.createElement('div');d.className='dot'+(k===0?' on':'');dots.appendChild(d);});
+  function show(n){i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach((s,k)=>s.classList.toggle('active',k===i));
+    dots.querySelectorAll('.dot').forEach((d,k)=>d.classList.toggle('on',k===i));
+    prev.disabled=i===0;next.disabled=i===slides.length-1;}
+  prev.onclick=()=>show(i-1);next.onclick=()=>show(i+1);
+  document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')show(i+1);if(e.key==='ArrowLeft')show(i-1);});
+</script>
+</body>
+</html>

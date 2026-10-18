@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Welcome: How This Portal Works</title>
+<style>
+  :root { --teal: #0f766e; --ink: #0f172a; }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f1f5f9; color: var(--ink); height: 100vh; display: flex; flex-direction: column; }
+  .stage { flex: 1; display: flex; align-items: center; justify-content: center; padding: 24px; }
+  .slide { display: none; max-width: 640px; width: 100%; background: #fff; border-radius: 16px; padding: 40px 44px; box-shadow: 0 10px 30px rgb(15 23 42 / .08); }
+  .slide.active { display: block; animation: fade .25s ease; }
+  @keyframes fade { from { opacity: 0; transform: translateY(6px); } }
+  .kicker { color: var(--teal); font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 10px; }
+  h1 { font-family: Georgia, serif; font-size: 28px; line-height: 1.25; margin-bottom: 14px; }
+  p { font-size: 15px; line-height: 1.65; color: #334155; margin-bottom: 10px; }
+  ul { padding-left: 20px; font-size: 15px; line-height: 1.7; color: #334155; }
+  .bar { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; background: #fff; border-top: 1px solid #e2e8f0; }
+  .dots { display: flex; gap: 6px; }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #cbd5e1; }
+  .dot.on { background: var(--teal); }
+  button { border: 0; border-radius: 8px; padding: 10px 18px; font-size: 14px; font-weight: 600; cursor: pointer; }
+  .next { background: var(--teal); color: #fff; }
+  .prev { background: #e2e8f0; color: #334155; }
+  button:disabled { opacity: .4; cursor: default; }
+</style>
+</head>
+<body>
+<div class="stage">
+  <section class="slide active">
+    <div class="kicker">Welcome</div>
+    <h1>How this learning portal works</h1>
+    <p>This portal hosts interactive learning modules published from <strong>Articulate</strong> as self-contained HTML5 packages.</p>
+    <p>This short walkthrough is itself a module — it runs inside the portal's embedded player, exactly like a real Storyline or Rise export.</p>
+  </section>
+  <section class="slide">
+    <div class="kicker">The Library</div>
+    <h1>Finding a module</h1>
+    <ul>
+      <li>Browse the <strong>module library</strong> on the home page.</li>
+      <li>Filter by <strong>category</strong> — Basic Science, Diagnostics, Nerve Repair, and more.</li>
+      <li>Use <strong>search</strong> to match titles, descriptions, and tags.</li>
+      <li>Cards show level (Foundation / Intermediate / Advanced) and estimated duration.</li>
+    </ul>
+  </section>
+  <section class="slide">
+    <div class="kicker">The Player</div>
+    <h1>Working through a module</h1>
+    <ul>
+      <li>Content plays in an <strong>embedded player</strong> — videos, slides, and quizzes behave exactly as designed in Articulate.</li>
+      <li>Use <strong>Fullscreen</strong> in the toolbar for distraction-free viewing.</li>
+      <li>When you finish, press <strong>Mark complete</strong> to record it.</li>
+    </ul>
+  </section>
+  <section class="slide">
+    <div class="kicker">Progress</div>
+    <h1>Your progress is remembered</h1>
+    <p>The library tracks which modules you have started and completed, and lets you <strong>continue</strong> or <strong>review</strong> at any time.</p>
+    <p>Progress is stored privately in your browser — no account needed.</p>
+    <p><strong>That's it — press Library (top left) to explore.</strong></p>
+  </section>
+</div>
+<div class="bar">
+  <button class="prev" id="prev" disabled>← Back</button>
+  <div class="dots" id="dots"></div>
+  <button class="next" id="next">Next →</button>
+</div>
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.getElementById('dots');
+  const prev = document.getElementById('prev');
+  const next = document.getElementById('next');
+  let i = 0;
+  slides.forEach((_, k) => { const d = document.createElement('div'); d.className = 'dot' + (k === 0 ? ' on' : ''); dots.appendChild(d); });
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, k) => s.classList.toggle('active', k === i));
+    dots.querySelectorAll('.dot').forEach((d, k) => d.classList.toggle('on', k === i));
+    prev.disabled = i === 0;
+    next.disabled = i === slides.length - 1;
+  }
+  prev.onclick = () => show(i - 1);
+  next.onclick = () => show(i + 1);
+  document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') show(i + 1);
+    if (e.key === 'ArrowLeft') show(i - 1);
+  });
+</script>
+</body>
+</html>

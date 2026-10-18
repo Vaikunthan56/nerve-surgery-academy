@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Electrodiagnostic Studies for the Junior Surgeon</title>
+<style>
+  :root { --teal:#0f766e; --ink:#0f172a; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:'Segoe UI',system-ui,sans-serif; background:#f1f5f9; color:var(--ink); height:100vh; display:flex; flex-direction:column; }
+  .stage { flex:1; overflow-y:auto; display:flex; align-items:flex-start; justify-content:center; padding:24px; }
+  .slide { display:none; max-width:680px; width:100%; background:#fff; border-radius:16px; padding:38px 44px; box-shadow:0 10px 30px rgb(15 23 42/.08); margin:auto 0; }
+  .slide.active { display:block; animation:fade .25s ease; }
+  @keyframes fade { from { opacity:0; transform:translateY(6px);} }
+  .kicker { color:var(--teal); font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; margin-bottom:10px; }
+  h1 { font-family:Georgia,serif; font-size:27px; line-height:1.25; margin-bottom:14px; }
+  h2 { font-family:Georgia,serif; font-size:19px; margin:16px 0 6px; color:#134e4a; }
+  p, li { font-size:15px; line-height:1.65; color:#334155; }
+  p { margin-bottom:10px; } ul, ol { padding-left:20px; margin-bottom:10px; }
+  table { width:100%; border-collapse:collapse; font-size:13.5px; margin:12px 0; }
+  th, td { border:1px solid #e2e8f0; padding:7px 9px; text-align:left; vertical-align:top; }
+  th { background:#f0fdfa; color:#134e4a; }
+  .fact { background:#f0fdfa; border-left:4px solid var(--teal); border-radius:0 8px 8px 0; padding:12px 16px; font-size:14px; color:#134e4a; margin-top:14px; }
+  .ref { font-size:13px; line-height:1.55; color:#334155; margin-bottom:10px; padding-left:24px; text-indent:-24px; }
+  .ref a { color:var(--teal); word-break:break-all; }
+  .bar { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; background:#fff; border-top:1px solid #e2e8f0; }
+  .dots { display:flex; gap:6px; } .dot { width:8px; height:8px; border-radius:50%; background:#cbd5e1; } .dot.on { background:var(--teal); }
+  button.nav { border:0; border-radius:8px; padding:10px 18px; font-size:14px; font-weight:600; cursor:pointer; }
+  .next { background:var(--teal); color:#fff; } .prev { background:#e2e8f0; color:#334155; }
+  button.nav:disabled { opacity:.4; cursor:default; }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <section class="slide active">
+    <div class="kicker">Diagnostics · Intermediate · ~30 min</div>
+    <h1>Electrodiagnostic Studies for the Junior Surgeon</h1>
+    <p><strong>Learning objectives.</strong> By the end of this module you should be able to:</p>
+    <ul>
+      <li>Explain what nerve conduction studies (NCS) and needle EMG actually measure</li>
+      <li>Time electrodiagnostic studies correctly after nerve injury — and say why early studies mislead</li>
+      <li>Use serial studies to decide between continued observation and surgery</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">What the tests measure</div>
+    <h1>NCS and EMG in plain terms</h1>
+    <h2>Nerve conduction studies</h2>
+    <ul>
+      <li><strong>CMAP</strong> (compound muscle action potential): motor axons. Amplitude reflects the number of functioning motor axons; latency/conduction velocity reflect myelin.</li>
+      <li><strong>SNAP</strong> (sensory nerve action potential): sensory axons distal to the dorsal root ganglion.</li>
+    </ul>
+    <h2>Needle EMG</h2>
+    <ul>
+      <li><strong>Fibrillations and positive sharp waves</strong> = denervated muscle fibres.</li>
+      <li><strong>Motor unit action potentials (MUAPs)</strong> — their absence, recruitment pattern, and later "nascent" (small, polyphasic) reinnervation potentials tell you whether axons are reaching muscle.</li>
+    </ul>
+    <div class="fact">A preserved SNAP with a paralysed, sensory-loss limb suggests a lesion <em>proximal</em> to the dorsal root ganglion — e.g. root avulsion in brachial plexus injury <sup>[1,4]</sup>.</div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Timing is everything</div>
+    <h1>Why "too early" means "useless"</h1>
+    <ul>
+      <li>Wallerian degeneration takes about <strong>72 hours</strong> to complete: in the first days after transection the distal stump still conducts, so NCS can look deceptively normal <sup>[2]</sup>.</li>
+      <li><strong>Fibrillation potentials and positive sharp waves</strong> take <strong>2–3 weeks</strong> to appear in denervated muscle (longer proximally).</li>
+      <li>The first informative window is therefore around <strong>3–4 weeks</strong> after injury.</li>
+      <li>Reinnervation is tracked <strong>serially</strong>: nascent MUAPs on EMG often precede clinical recovery by weeks and can justify continued observation.</li>
+    </ul>
+    <div class="fact">Practical rule: a study done in the first week answers "is the nerve in continuity electrically?", not "will it recover?". Recovery questions need the 3–4 week baseline and a ~3 month repeat.</div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Interpretation</div>
+    <h1>What electrodiagnostics can and cannot tell you</h1>
+    <ul>
+      <li><strong>Can:</strong> localise the lesion; distinguish demyelinating conduction block (neurapraxia) from axonal loss; detect early reinnervation; separate preganglionic from postganglionic plexus lesions.</li>
+      <li><strong>Cannot:</strong> reliably distinguish Sunderland grades III, IV and V from each other — all show complete axonal loss. That distinction is clinical and, increasingly, radiological (MR neurography / ultrasound).</li>
+      <li>An <strong>absent CMAP with no reinnervation at 3–4 months</strong> after a closed injury is a strong argument for exploration and repair <sup>[1,2]</sup>.</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Key points</div>
+    <h1>Take-home messages</h1>
+    <ol>
+      <li>Order NCS/EMG at <strong>3–4 weeks</strong>, not in the first days, and repeat at ~3 months if recovery is in doubt.</li>
+      <li>Read the report actively: CMAP/SNAP amplitudes, fibrillations, MUAP recruitment — not just the conclusion line.</li>
+      <li>Electrodiagnostics complements — never replaces — the advancing Tinel sign and serial clinical examination.</li>
+      <li>The decision to operate is made on the <strong>trend</strong>: no clinical <em>and</em> no electrical recovery by 3–4 months = surgery.</li>
+    </ol>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">References</div>
+    <h1>Sources &amp; further reading</h1>
+    <p class="ref">1. Campbell WW. Evaluation and management of peripheral nerve injury. <em>Clin Neurophysiol</em>. 2008;119(9):1951–1965. doi: <a href="https://doi.org/10.1016/j.clinph.2008.03.018">10.1016/j.clinph.2008.03.018</a></p>
+    <p class="ref">2. Robinson LR. Traumatic injury to peripheral nerves. <em>Muscle Nerve</em>. 2000;23(6):863–873. doi: <a href="https://doi.org/10.1002/(SICI)1097-4598(200006)23:6%3C863::AID-MUS4%3E3.0.CO;2-0">10.1002/(SICI)1097-4598(200006)23:6&lt;863::AID-MUS4&gt;3.0.CO;2-0</a></p>
+    <p class="ref">3. Werner RA, Andary M. Electrodiagnostic evaluation of carpal tunnel syndrome. <em>Muscle Nerve</em>. 2011;44(4):597–607. doi: <a href="https://doi.org/10.1002/mus.22208">10.1002/mus.22208</a></p>
+    <p class="ref">4. Aminoff MJ. Electrophysiologic testing for the diagnosis of peripheral nerve injuries. <em>Anesthesiology</em>. 2004;100(5):1298–1303. doi: <a href="https://doi.org/10.1097/00000542-200405000-00034">10.1097/00000542-200405000-00034</a></p>
+    <p style="font-size:12px;color:#94a3b8;margin-top:14px">Educational content for junior surgical trainees. All DOIs verified against CrossRef at the time of publication (Oct 2026).</p>
+  </section>
+
+</div>
+<div class="bar">
+  <button class="nav prev" id="prev" disabled>← Back</button>
+  <div class="dots" id="dots"></div>
+  <button class="nav next" id="next">Next →</button>
+</div>
+<script>
+  const slides=document.querySelectorAll('.slide'),dots=document.getElementById('dots'),
+        prev=document.getElementById('prev'),next=document.getElementById('next');let i=0;
+  slides.forEach((_,k)=>{const d=document.createElement('div');d.className='dot'+(k===0?' on':'');dots.appendChild(d);});
+  function show(n){i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach((s,k)=>s.classList.toggle('active',k===i));
+    dots.querySelectorAll('.dot').forEach((d,k)=>d.classList.toggle('on',k===i));
+    prev.disabled=i===0;next.disabled=i===slides.length-1;}
+  prev.onclick=()=>show(i-1);next.onclick=()=>show(i+1);
+  document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')show(i+1);if(e.key==='ArrowLeft')show(i-1);});
+</script>
+</body>
+</html>

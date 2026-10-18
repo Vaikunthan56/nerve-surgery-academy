@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Classification of Nerve Injury: Seddon &amp; Sunderland</title>
+<style>
+  :root { --teal:#0f766e; --ink:#0f172a; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:'Segoe UI',system-ui,sans-serif; background:#f1f5f9; color:var(--ink); height:100vh; display:flex; flex-direction:column; }
+  .stage { flex:1; overflow-y:auto; display:flex; align-items:flex-start; justify-content:center; padding:24px; }
+  .slide { display:none; max-width:680px; width:100%; background:#fff; border-radius:16px; padding:38px 44px; box-shadow:0 10px 30px rgb(15 23 42/.08); margin:auto 0; }
+  .slide.active { display:block; animation:fade .25s ease; }
+  @keyframes fade { from { opacity:0; transform:translateY(6px);} }
+  .kicker { color:var(--teal); font-size:12px; font-weight:600; letter-spacing:.12em; text-transform:uppercase; margin-bottom:10px; }
+  h1 { font-family:Georgia,serif; font-size:27px; line-height:1.25; margin-bottom:14px; }
+  h2 { font-family:Georgia,serif; font-size:19px; margin:16px 0 6px; color:#134e4a; }
+  p, li { font-size:15px; line-height:1.65; color:#334155; }
+  p { margin-bottom:10px; } ul, ol { padding-left:20px; margin-bottom:10px; }
+  table { width:100%; border-collapse:collapse; font-size:13.5px; margin:12px 0; }
+  th, td { border:1px solid #e2e8f0; padding:7px 9px; text-align:left; vertical-align:top; }
+  th { background:#f0fdfa; color:#134e4a; }
+  .fact { background:#f0fdfa; border-left:4px solid var(--teal); border-radius:0 8px 8px 0; padding:12px 16px; font-size:14px; color:#134e4a; margin-top:14px; }
+  .ref { font-size:13px; line-height:1.55; color:#334155; margin-bottom:10px; padding-left:24px; text-indent:-24px; }
+  .ref a { color:var(--teal); word-break:break-all; }
+  .bar { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; background:#fff; border-top:1px solid #e2e8f0; }
+  .dots { display:flex; gap:6px; } .dot { width:8px; height:8px; border-radius:50%; background:#cbd5e1; } .dot.on { background:var(--teal); }
+  button.nav { border:0; border-radius:8px; padding:10px 18px; font-size:14px; font-weight:600; cursor:pointer; }
+  .next { background:var(--teal); color:#fff; } .prev { background:#e2e8f0; color:#334155; }
+  button.nav:disabled { opacity:.4; cursor:default; }
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <section class="slide active">
+    <div class="kicker">Basic Science · Foundation · ~20 min</div>
+    <h1>Classification of Nerve Injury: Seddon &amp; Sunderland</h1>
+    <p><strong>Learning objectives.</strong> By the end of this module you should be able to:</p>
+    <ul>
+      <li>Describe Seddon's three types of nerve injury and Sunderland's five grades, and how they map onto each other</li>
+      <li>Relate each grade to its anatomical substrate, clinical signs, and recovery potential</li>
+      <li>Explain how injury grade drives the timing of surgical intervention</li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">The Seddon classification (1943)</div>
+    <h1>Three types of nerve injury</h1>
+    <p>Writing from wartime experience, Seddon defined three injury types that remain the everyday clinical shorthand <sup>[1]</sup>:</p>
+    <ul>
+      <li><strong>Neurapraxia</strong> — focal myelin injury causing a conduction block; axons and connective tissue intact. No Wallerian degeneration. Full recovery, typically within days to ~12 weeks.</li>
+      <li><strong>Axonotmesis</strong> — axons and myelin disrupted, but endoneurium, perineurium and epineurium preserved. Wallerian degeneration occurs distally; recovery depends on axonal regrowth at roughly 1 mm/day.</li>
+      <li><strong>Neurotmesis</strong> — complete disruption of the entire nerve. No spontaneous recovery; surgery is required.</li>
+    </ul>
+    <div class="fact">Clinical correlate: neurapraxia has no Tinel sign and no denervation on EMG; axonotmesis shows an advancing Tinel sign as axons regenerate.</div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">The Sunderland classification (1951)</div>
+    <h1>Five grades, defined by which layers are lost</h1>
+    <table>
+      <tr><th>Grade</th><th>Structures disrupted</th><th>Spontaneous recovery</th></tr>
+      <tr><td><strong>I</strong></td><td>Myelin only (= neurapraxia)</td><td>Complete; days–weeks</td></tr>
+      <tr><td><strong>II</strong></td><td>Axon + myelin; endoneurium intact</td><td>Good; axons regrow within their tubes</td></tr>
+      <tr><td><strong>III</strong></td><td>+ endoneurium; perineurium intact</td><td>Variable; intrafascicular fibrosis misdirects axons</td></tr>
+      <tr><td><strong>IV</strong></td><td>+ perineurium; only epineurium intact</td><td>Poor — neuroma-in-continuity; surgery usually needed</td></tr>
+      <tr><td><strong>V</strong></td><td>Complete transection (= neurotmesis)</td><td>None without repair</td></tr>
+    </table>
+    <p>Mackinnon and Dellon later added a <strong>grade VI</strong>: a mixed injury in which different fascicles in the same nerve sustain different grades — arguably the commonest pattern in penetrating trauma <sup>[3,4]</sup>.</p>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Why the grade matters</div>
+    <h1>From classification to clinical decision</h1>
+    <ul>
+      <li>Grades I–II are managed expectantly: recovery is predicted by the <strong>distance from lesion to target</strong> at ~1 mm/day.</li>
+      <li>If a closed injury shows <strong>no clinical or electrical recovery by ~3 months</strong>, the lesion is behaving like grade III–V and surgical exploration is indicated.</li>
+      <li>Grade IV–V lesions cannot recover spontaneously: they need resection of scar and repair or grafting.</li>
+      <li><strong>MR neurography</strong> can now image fascicular disruption and neuroma-in-continuity, mapping the Seddon/Sunderland grade onto surgical planning non-invasively <sup>[3]</sup>.</li>
+    </ul>
+    <div class="fact">A non-advancing Tinel sign at the level of injury, with absent motor unit potentials at 3 months, is the classic picture of a lesion that will not recover without surgery.</div>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">Key points</div>
+    <h1>Take-home messages</h1>
+    <ol>
+      <li>Seddon gives you three clinically useful categories; Sunderland gives you the anatomical detail that predicts recovery.</li>
+      <li>The single most important distinction for the junior surgeon: <strong>is the endoneurial tube intact?</strong> If yes, regeneration can proceed; if no, recovery fails.</li>
+      <li>Recovery rate ≈ 1 mm/day guides how long to wait — and when to stop waiting.</li>
+      <li>Mixed (grade VI) injuries are common; treat each fascicular population on its merits.</li>
+    </ol>
+  </section>
+
+  <section class="slide">
+    <div class="kicker">References</div>
+    <h1>Sources &amp; further reading</h1>
+    <p class="ref">1. Seddon HJ. Three types of nerve injury. <em>Brain</em>. 1943;66(4):237–288. doi: <a href="https://doi.org/10.1093/brain/66.4.237">10.1093/brain/66.4.237</a></p>
+    <p class="ref">2. Sunderland S. A classification of peripheral nerve injuries producing loss of function. <em>Brain</em>. 1951;74(4):491–516. doi: <a href="https://doi.org/10.1093/brain/74.4.491">10.1093/brain/74.4.491</a></p>
+    <p class="ref">3. Chhabra A, Ahlawat S, Belzberg A, Andreseik G. Peripheral nerve injury grading simplified on MR neurography: as referenced to Seddon and Sunderland classifications. <em>Indian J Radiol Imaging</em>. 2014;24(3):217–224. doi: <a href="https://doi.org/10.4103/0971-3026.137025">10.4103/0971-3026.137025</a></p>
+    <p class="ref">4. Grosu-Bularda A, Vancea CV, Hodea FV, et al. Optimizing peripheral nerve regeneration: surgical techniques, biomolecular and regenerative strategies — a narrative review. <em>Int J Mol Sci</em>. 2025;26(8):3895. doi: <a href="https://doi.org/10.3390/ijms26083895">10.3390/ijms26083895</a></p>
+    <p style="font-size:12px;color:#94a3b8;margin-top:14px">Educational content for junior surgical trainees. All DOIs verified against CrossRef at the time of publication (Oct 2026).</p>
+  </section>
+
+</div>
+<div class="bar">
+  <button class="nav prev" id="prev" disabled>← Back</button>
+  <div class="dots" id="dots"></div>
+  <button class="nav next" id="next">Next →</button>
+</div>
+<script>
+  const slides=document.querySelectorAll('.slide'),dots=document.getElementById('dots'),
+        prev=document.getElementById('prev'),next=document.getElementById('next');let i=0;
+  slides.forEach((_,k)=>{const d=document.createElement('div');d.className='dot'+(k===0?' on':'');dots.appendChild(d);});
+  function show(n){i=Math.max(0,Math.min(slides.length-1,n));
+    slides.forEach((s,k)=>s.classList.toggle('active',k===i));
+    dots.querySelectorAll('.dot').forEach((d,k)=>d.classList.toggle('on',k===i));
+    prev.disabled=i===0;next.disabled=i===slides.length-1;}
+  prev.onclick=()=>show(i-1);next.onclick=()=>show(i+1);
+  document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')show(i+1);if(e.key==='ArrowLeft')show(i-1);});
+</script>
+</body>
+</html>
