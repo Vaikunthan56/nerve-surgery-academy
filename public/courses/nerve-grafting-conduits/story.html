@@ -23,6 +23,9 @@
   .fact { background:#f0fdfa; border-left:4px solid var(--teal); border-radius:0 8px 8px 0; padding:12px 16px; font-size:14px; color:#134e4a; margin-top:14px; }
   .ref { font-size:13px; line-height:1.55; color:#334155; margin-bottom:10px; padding-left:24px; text-indent:-24px; }
   .ref a { color:var(--teal); word-break:break-all; }
+  .fig { margin:16px 0; }
+  .fig svg { width:100%; height:auto; display:block; }
+  .fig figcaption { font-size:12px; color:#64748b; margin-top:6px; }
   .bar { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; background:#fff; border-top:1px solid #e2e8f0; }
   .dots { display:flex; gap:6px; } .dot { width:8px; height:8px; border-radius:50%; background:#cbd5e1; } .dot.on { background:var(--teal); }
   button.nav { border:0; border-radius:8px; padding:10px 18px; font-size:14px; font-weight:600; cursor:pointer; }
@@ -79,6 +82,30 @@
   <section class="slide">
     <div class="kicker">Choosing between them</div>
     <h1>A working algorithm</h1>
+    <figure class="fig">
+      <svg viewBox="0 0 560 120" role="img" aria-label="Gap length decision bar">
+        <rect x="30" y="30" width="130" height="34" fill="#0f766e" rx="4"/>
+        <rect x="160" y="30" width="150" height="34" fill="#059669" rx="4"/>
+        <rect x="310" y="30" width="120" height="34" fill="#d97706" rx="4"/>
+        <rect x="430" y="30" width="100" height="34" fill="#be123c" rx="4"/>
+        <g font-size="12" fill="#fff" text-anchor="middle">
+          <text x="95" y="51">Direct repair</text>
+          <text x="235" y="51">Conduit</text>
+          <text x="370" y="51">Allograft</text>
+          <text x="480" y="51">Autograft</text>
+        </g>
+        <g stroke="#475569" stroke-width="1.5">
+          <line x1="30" y1="68" x2="30" y2="76"/><line x1="310" y1="68" x2="310" y2="76"/><line x1="430" y1="68" x2="430" y2="76"/>
+        </g>
+        <g font-size="11.5" fill="#64748b" text-anchor="middle">
+          <text x="30" y="92">no gap</text>
+          <text x="235" y="92">sensory, small, &lt; 3 cm</text>
+          <text x="370" y="92">sensory/mixed, ~3–5 cm</text>
+          <text x="480" y="92">motor, large, long</text>
+        </g>
+      </svg>
+      <figcaption>Figure. Choosing what bridges the gap — nerve type and calibre matter as much as length.</figcaption>
+    </figure>
     <table>
       <tr><th>Situation</th><th>First choice</th></tr>
       <tr><td>Tension-free coaptation possible</td><td>Direct repair</td></tr>

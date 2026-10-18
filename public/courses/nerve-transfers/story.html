@@ -23,6 +23,9 @@
   .fact { background:#f0fdfa; border-left:4px solid var(--teal); border-radius:0 8px 8px 0; padding:12px 16px; font-size:14px; color:#134e4a; margin-top:14px; }
   .ref { font-size:13px; line-height:1.55; color:#334155; margin-bottom:10px; padding-left:24px; text-indent:-24px; }
   .ref a { color:var(--teal); word-break:break-all; }
+  .fig { margin:16px 0; }
+  .fig svg { width:100%; height:auto; display:block; }
+  .fig figcaption { font-size:12px; color:#64748b; margin-top:6px; }
   .bar { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; background:#fff; border-top:1px solid #e2e8f0; }
   .dots { display:flex; gap:6px; } .dot { width:8px; height:8px; border-radius:50%; background:#cbd5e1; } .dot.on { background:var(--teal); }
   button.nav { border:0; border-radius:8px; padding:10px 18px; font-size:14px; font-weight:600; cursor:pointer; }
@@ -52,6 +55,27 @@
       <li>This sidesteps the fundamental problem of proximal injuries: at ~1 mm/day, axons from a repaired axillary or C5–6 lesion may reach the motor endplates only after they have degenerated.</li>
       <li>Motor endplates become unreceptive after roughly <strong>12–18 months</strong> of denervation — so transfers are planned early, and a delayed presentation is an argument <em>for</em> a transfer, not against <sup>[1,4]</sup>.</li>
     </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 420 230" role="img" aria-label="Nerve transfer schematic">
+        <defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0 0 L6 3 L0 6 z" fill="#0f766e"/></marker></defs>
+        <rect x="80" y="25" width="26" height="180" rx="10" fill="#d1fae5" stroke="#059669" stroke-width="2.5"/>
+        <rect x="280" y="25" width="26" height="55" rx="10" fill="#fee2e2" stroke="#dc2626" stroke-width="2.5"/>
+        <line x1="280" y1="30" x2="306" y2="75" stroke="#dc2626" stroke-width="2"/>
+        <line x1="306" y1="30" x2="280" y2="75" stroke="#dc2626" stroke-width="2"/>
+        <rect x="280" y="105" width="26" height="100" rx="10" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
+        <path d="M 106 120 C 170 95, 220 95, 272 112" fill="none" stroke="#0f766e" stroke-width="2.5" marker-end="url(#arr)"/>
+        <circle cx="276" cy="113" r="5" fill="#0f766e"/>
+        <g font-size="12" fill="#334155">
+          <text x="20" y="222">Donor nerve — intact, expendable fascicle</text>
+          <text x="316" y="45">injured stump</text>
+          <text x="316" y="59">(resected)</text>
+          <text x="228" y="98" fill="#0f766e">coaptation</text>
+          <text x="316" y="150">distal stump</text>
+          <text x="316" y="164">→ target muscle</text>
+        </g>
+      </svg>
+      <figcaption>Figure. A transfer rewires a healthy expendable fascicle onto the denervated stump, close to the target muscle.</figcaption>
+    </figure>
     <div class="fact">Think of a transfer as "rewiring": you sacrifice a redundant function to buy a short, fast, reliable reinnervation distance for a critical one.</div>
   </section>
 

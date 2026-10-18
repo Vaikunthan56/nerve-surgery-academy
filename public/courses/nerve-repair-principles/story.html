@@ -20,6 +20,9 @@
   .fact { background:#f0fdfa; border-left:4px solid var(--teal); border-radius:0 8px 8px 0; padding:12px 16px; font-size:14px; color:#134e4a; margin-top:14px; }
   .ref { font-size:13px; line-height:1.55; color:#334155; margin-bottom:10px; padding-left:24px; text-indent:-24px; }
   .ref a { color:var(--teal); word-break:break-all; }
+  .fig { margin:16px 0; }
+  .fig svg { width:100%; height:auto; display:block; }
+  .fig figcaption { font-size:12px; color:#64748b; margin-top:6px; }
   .bar { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; background:#fff; border-top:1px solid #e2e8f0; }
   .dots { display:flex; gap:6px; } .dot { width:8px; height:8px; border-radius:50%; background:#cbd5e1; } .dot.on { background:var(--teal); }
   button.nav { border:0; border-radius:8px; padding:10px 18px; font-size:14px; font-weight:600; cursor:pointer; }
@@ -72,6 +75,24 @@
       <li><strong>Epineurial repair</strong> is the workhorse for most distal, single-level injuries. <strong>Group fascicular repair</strong> suits proximal mixed nerves where topography is well defined. Evidence does not clearly favour one overall; alignment quality and minimal suture burden matter more <sup>[4]</sup>.</li>
       <li>Use the fewest sutures that hold coaptation; fibrin glue can supplement, not replace, alignment.</li>
     </ul>
+    <figure class="fig">
+      <svg viewBox="0 0 420 160" role="img" aria-label="Epineurial nerve repair schematic">
+        <path d="M 40 55 h 130 q 22 0 22 25 t -22 25 h -130 z" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
+        <path d="M 380 55 h -130 q -22 0 -22 25 t 22 25 h 130 z" fill="#fef3c7" stroke="#f59e0b" stroke-width="2.5"/>
+        <line x1="210" y1="55" x2="210" y2="105" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <g stroke="#0f766e" stroke-width="2.5" fill="none">
+          <path d="M 200 62 q 10 -10 20 0"/>
+          <path d="M 200 80 q 10 -10 20 0"/>
+          <path d="M 200 98 q 10 -10 20 0"/>
+        </g>
+        <g fill="#0f766e">
+          <circle cx="70" cy="70" r="3"/><circle cx="70" cy="85" r="3"/><circle cx="95" cy="70" r="3"/><circle cx="95" cy="85" r="3"/><circle cx="120" cy="70" r="3"/><circle cx="120" cy="85" r="3"/><circle cx="145" cy="72" r="3"/><circle cx="145" cy="88" r="3"/>
+          <circle cx="350" cy="70" r="3"/><circle cx="350" cy="85" r="3"/><circle cx="325" cy="70" r="3"/><circle cx="325" cy="85" r="3"/><circle cx="300" cy="70" r="3"/><circle cx="300" cy="85" r="3"/><circle cx="275" cy="72" r="3"/><circle cx="275" cy="88" r="3"/>
+        </g>
+        <text x="210" y="135" text-anchor="middle" font-size="12.5" fill="#334155">Tension-free coaptation · aligned fascicles · few fine sutures</text>
+      </svg>
+      <figcaption>Figure. Epineurial repair: the trimmed stumps meet without tension and sutures simply hold the alignment.</figcaption>
+    </figure>
   </section>
 
   <section class="slide">
